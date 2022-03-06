@@ -13,9 +13,116 @@ import java.io.InputStream;
 import java.util.List;
 
 
+//public class LogTest {
+//    @Test
+//    public void testFindById() {
+//        try {
+//            InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+//
+//            SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
+//
+//            SqlSession session = factory.openSession();
+//
+//            StudentDao studentDao = session.getMapper(StudentDao.class);
+//
+//            Student student = studentDao.findById(1);
+//
+//            System.out.println(student);
+//
+//            session.commit();
+//
+//            session.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
+//
+//    @Test
+//    public void testFindAll() {
+//        try {
+//            InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+//
+//            SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
+//
+//            SqlSession session = factory.openSession();
+//
+//            StudentDao studentDao = session.getMapper(StudentDao.class);
+//
+//            List<Student> students = studentDao.findAll();
+//
+//            for (Student student : students) {
+//                System.out.println(student);
+//            }
+//
+//            session.commit();
+//
+//            session.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
+//}
+//public class LogTest {
+//    @Test
+//    public void testFindAll(){
+//        try {
+//            InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+//
+//            SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
+//
+//            SqlSession session = factory.openSession();
+//
+//            StudentDao studentDao = session.getMapper(StudentDao.class);
+//
+//            List<Student> students = studentDao.findAll();
+//
+//            for (Student student : students) {
+//
+//                System.out.println(student);
+//
+//            }
+//
+//            session.commit();
+//            session.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//    }
+//    @Test
+//    public void testFindById(){
+//
+//        try {
+//            InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+//
+//            SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
+//
+//            SqlSession session = factory.openSession();
+//
+//            StudentDao studentDao = session.getMapper(StudentDao.class);
+//
+//            Student student = studentDao.findById(22);
+//
+//            session.commit();
+//
+//            session.close();
+//
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+
+
+
+
+//
+//    }
+//}
+
 public class LogTest {
     @Test
-    public void testFindById() {
+    public void testFindAll(){
+
         try {
             InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
 
@@ -25,32 +132,10 @@ public class LogTest {
 
             StudentDao studentDao = session.getMapper(StudentDao.class);
 
-            Student student = studentDao.findById(1);
-
-            System.out.println(student);
-
-            session.commit();
-
-            session.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public void testFindAll() {
-        try {
-            InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
-
-            SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
-
-            SqlSession session = factory.openSession();
-
-            StudentDao studentDao = session.getMapper(StudentDao.class);
-
-            List<Student> students = studentDao.findAll();
+            List <Student> students = studentDao.findAll();
 
             for (Student student : students) {
+
                 System.out.println(student);
             }
 
@@ -60,5 +145,28 @@ public class LogTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
+    @Test
+    public void testFindById(){
+
+        try {
+            InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+
+            SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
+
+            SqlSession session = factory.openSession();
+
+            StudentDao studentDao = session.getMapper(StudentDao.class);
+
+            Student student = studentDao.findById(23);
+
+            session.commit();
+
+            session.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

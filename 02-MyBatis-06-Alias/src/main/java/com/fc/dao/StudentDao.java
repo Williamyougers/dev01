@@ -4,8 +4,32 @@ import com.fc.entity.Student;
 
 import java.util.List;
 
+//public interface StudentDao {
+//    List<Student> findAll();
+//
+//    Student findById(Integer id);
+//}
+
+//public  interface StudentDao {
+//
+//    List<Student> findAll();
+//
+//    Student findById(Integer i);
+//
+//}
+
+//public interface StudentDao {
+//
+//    List<Student> findAll();
+//
+//    Student findById(Integer i);
+//
+//}
+
 public interface StudentDao {
+
     List<Student> findAll();
 
-    Student findById(Integer id);
+    Student findById(Integer i);
+
 }

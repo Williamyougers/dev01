@@ -13,9 +13,160 @@ import java.io.InputStream;
 import java.util.List;
 
 
+//public class AliasTest {
+//    @Test
+//    public void testFindById() {
+//        try {
+//            InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+//
+//            SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
+//
+//            SqlSession session = factory.openSession();
+//
+//            StudentDao studentDao = session.getMapper(StudentDao.class);
+//
+//            Student student = studentDao.findById(1);
+//
+//            System.out.println(student);
+//
+//            session.commit();
+//
+//            session.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
+//
+//    @Test
+//    public void testFindAll() {
+//        try {
+//            InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+//
+//            SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
+//
+//            SqlSession session = factory.openSession();
+//
+//            StudentDao studentDao = session.getMapper(StudentDao.class);
+//
+//            List<Student> students = studentDao.findAll();
+//
+//            for (Student student : students) {
+//                System.out.println(student);
+//            }
+//
+//            session.commit();
+//
+//            session.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
+//}
+
+//public class AliasTest {
+//
+//    @Test
+//
+//    public void testFindById(){
+//        try {
+//            InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+//
+//            SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
+//
+//            SqlSession session = factory.openSession();
+//
+//            StudentDao studentDao = session.getMapper(StudentDao.class);
+//
+//            Student student = studentDao.findById(1);
+//
+//            System.out.println(student);
+//
+//            session.commit();
+//
+//            session.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
+//    @Test
+//    public void findAll(){
+//        try {
+//            InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+//
+//            SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
+//
+//            SqlSession session = factory.openSession();
+//
+//            StudentDao studentDao = session.getMapper(StudentDao.class);
+//
+//            List<Student> students = studentDao.findAll();
+//            for (Student student : students) {
+//
+//                System.out.println(student);
+//            }
+//
+//session.commit();
+//            session.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
+//}
+//public class AliasTest {
+//    @Test
+//    public void testFindById(){
+//        try {
+//            InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+//
+//            SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
+//
+//            SqlSession session = factory.openSession();
+//
+//            StudentDao studentDao = session.getMapper(StudentDao.class);
+//
+//            Student student = studentDao.findById(1);
+//
+//            System.out.println(student);
+//
+//           session.commit();
+//           session.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//
+//    }
+//    @Test
+//    public void findAll(){
+//        try {
+//            InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+//
+//            SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
+//
+//              SqlSession session = factory.openSession();
+//
+//            StudentDao studentDao = session.getMapper(StudentDao.class);
+//
+//            List<Student> students = studentDao.findAll();
+//
+//            for (Student student : students) {
+//
+//                System.out.println(student);
+//
+//            }
+//
+//            session.commit();
+//
+//            session.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//    }
+//}
 public class AliasTest {
     @Test
-    public void testFindById() {
+    public void findById(){
         try {
             InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
 
@@ -32,13 +183,16 @@ public class AliasTest {
             session.commit();
 
             session.close();
+
         } catch (IOException e) {
+
             e.printStackTrace();
+
         }
     }
-
     @Test
-    public void testFindAll() {
+    public void findAll(){
+
         try {
             InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
 
@@ -48,17 +202,19 @@ public class AliasTest {
 
             StudentDao studentDao = session.getMapper(StudentDao.class);
 
-            List<Student> students = studentDao.findAll();
+            List<Student> student = studentDao.findAll();
 
-            for (Student student : students) {
-                System.out.println(student);
+            for (Student student1 : student) {
+                System.out.println(student1);
             }
-
             session.commit();
 
             session.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 }
+

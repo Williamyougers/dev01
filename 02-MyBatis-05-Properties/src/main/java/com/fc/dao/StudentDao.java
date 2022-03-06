@@ -4,6 +4,16 @@ import com.fc.entity.Student;
 
 import java.util.List;
 
+//public interface StudentDao {
+//    List<Student> findAll();
+////}
+//public interface StudentDao {
+//    List<Student> findAll();
+//}
+//public interface StudentDao {
+//    List<Student> findAll();
+//
+//}
 public interface StudentDao {
     List<Student> findAll();
 }
