@@ -13,7 +13,7 @@
     </select>
 
     <insert id="insert">
-        insert into student(name, age, gender, birthday, info) values (#{name}, #{age}, #{gender}, #{birthday}, #{info})
+        insert into student(name, age, gender, info) values (#{name}, #{age}, #{gender}, #{info})
     </insert>
 
     <delete id="delete" parameterType="Integer">
@@ -33,6 +33,6 @@
     keyProperty：主键回填到什么位置
     -->
     <insert id="getAutoIncrement" keyProperty="id" useGeneratedKeys="true" parameterType="com.fc.entity.Student">
-        insert into student(name, age, gender, birthday, info) values (#{name}, #{age}, #{gender}, #{birthday}, #{info})
+        insert into student(name, age, gender, info) values (#{name}, #{age}, #{gender} , #{info})
     </insert>
 </mapper>

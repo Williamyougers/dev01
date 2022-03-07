@@ -10,6 +10,6 @@ public class Student {
     private String name;
     private Byte age;
     private String gender;
-    private Date birthday;
+
     private String info;
 }
