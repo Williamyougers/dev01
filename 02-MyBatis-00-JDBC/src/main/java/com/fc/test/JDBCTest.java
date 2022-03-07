@@ -14,9 +14,9 @@ public class JDBCTest {
             Class.forName("com.mysql.jdbc.Driver");
 
             // 准备参数
-            String url = "jdbc:mysql://localhost:3306/rx2001?useSSL=false&useUnicode=true";
+            String url = "jdbc:mysql://localhost:3306/student?useSSL=false&useUnicode=true";
             String username = "root";
-            String password = "root";
+            String password = "123456";
             String sql = "select * from student";
 
             // 获取连接
