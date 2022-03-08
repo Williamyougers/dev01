@@ -20,7 +20,7 @@
         select * from t_account
     </select>
 
-    <select id="findById" resultType="com.fc.entity.TAcount">
+    <select id="findById" resultType="com.fc.entity.TAccount">
         select *
         from t_account where t_id = #{id};
     </select>

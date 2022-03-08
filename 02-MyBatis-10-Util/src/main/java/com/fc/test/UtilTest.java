@@ -15,34 +15,166 @@ import java.util.Date;
 import java.util.List;
 
 
+//public class UtilTest {
+//    @Test
+//    public void testFindById() {
+//        StudentDao studentDao = MyBatisUtil.getMapper(StudentDao.class);
+//
+//        System.out.println(studentDao.findById(1));
+//
+//        MyBatisUtil.commit();
+//    }
+//
+//    @Test
+//    public void test() {
+//        try {
+//            StudentDao studentDao = MyBatisUtil.getMapper(StudentDao.class);
+//
+//            List<Student> students = studentDao.findAll();
+//
+//            MyBatisUtil.commit();
+//
+//            for (Student student : students) {
+//                System.out.println(student);
+//            }
+//        } catch (Exception e) {
+//            MyBatisUtil.rollback();
+//            e.printStackTrace();
+//        }
+//    }
+//
+//}
+//public class UtilTest {
+//
+//    @Test
+//    public void testFindById(){
+//
+//       StudentDao studentDao= MyBatisUtil.getMapper (StudentDao.class);
+//
+//        System.out.println (studentDao.findById(1));
+//
+//        MyBatisUtil.commit ();
+//    }
+//    @Test
+//    public void testFindAll(){
+//
+//       try {
+//           StudentDao studentDao = MyBatisUtil.getMapper (StudentDao.class);
+//
+//           List<Student> students = studentDao.findAll ();
+//
+//           for (Student student : students) {
+//               System.out.println (student);
+//           }
+//       }catch (Exception e){
+//           e.printStackTrace ();
+//           MyBatisUtil.rollback ();
+//       }
+//    }
+//}
+//
+//    public class UtilTest {
+//
+//        @Test
+//
+//        public void testFindById(){
+//
+//            StudentDao mapper = MyBatisUtil.getMapper (StudentDao.class);
+//
+//            System.out.println (mapper.findById (1));
+//
+//            MyBatisUtil.commit ();
+//        }
+//        @Test
+//
+//        public void testFindAll(){
+//
+//           try {
+//           StudentDao studentDao = MyBatisUtil.getMapper (StudentDao.class);
+//
+//           List<Student> students = studentDao.findAll ();
+//
+//           for (Student student : students) {
+//               System.out.println (student);
+//           }
+//       }catch (Exception e){
+//           e.printStackTrace ();
+//           MyBatisUtil.rollback ();
+//       }
+//
+//
+//
+//    }
+//}
+
+//public class UtilTest {
+//
+//    @Test
+//
+//    public void testFindById(){
+//
+//        StudentDao mapper = MyBatisUtil.getMapper (StudentDao.class);
+//
+//        System.out.println (mapper);
+//
+//
+//
+//
+//    }
+//    @Test
+//
+//    public void testFindAll(){
+//
+//        try{
+//            StudentDao mapper = MyBatisUtil.getMapper (StudentDao.class);
+//
+//            List<Student> students = mapper.findAll ();
+//
+//            for (Student student : students) {
+//
+//                System.out.println (student);
+//            }
+//        }catch (Exception e) {
+//
+//            e.printStackTrace ();
+//
+//            MyBatisUtil.rollback ();
+//        }
+//
+//
+//    }
+//}
+
 public class UtilTest {
+
     @Test
-    public void testFindById() {
-        StudentDao studentDao = MyBatisUtil.getMapper(StudentDao.class);
+    public void testFindById(){
 
-        System.out.println(studentDao.findById(1));
+        StudentDao mapper = MyBatisUtil.getMapper (StudentDao.class);
 
-        MyBatisUtil.commit();
+        System.out.println (mapper);
+
     }
 
     @Test
-    public void test() {
+    public void testFindAll(){
+
         try {
-            StudentDao studentDao = MyBatisUtil.getMapper(StudentDao.class);
+            StudentDao mapper = MyBatisUtil.getMapper (StudentDao.class);
 
-            List<Student> students = studentDao.findAll();
-
-            MyBatisUtil.commit();
+            List<Student> students = mapper.findAll ();
 
             for (Student student : students) {
-                System.out.println(student);
+
+                System.out.println (student);
             }
-        } catch (Exception e) {
-            MyBatisUtil.rollback();
-            e.printStackTrace();
+        }catch (Exception e){
+
+            e.printStackTrace ();
+
+            MyBatisUtil.rollback ();
         }
     }
-
 }
 
 

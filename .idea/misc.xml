@@ -18,6 +18,9 @@
         <option value="$PROJECT_DIR$/02-MyBatis-04-Placeholder/pom.xml" />
         <option value="$PROJECT_DIR$/01-ThirdLayerApplication-01-Web/pom.xml" />
         <option value="$PROJECT_DIR$/02-MyBatis-09-CRUD/pom.xml" />
+        <option value="$PROJECT_DIR$/02-MyBatis-10-Util/pom.xml" />
+        <option value="$PROJECT_DIR$/02-MyBatis-11-ORM/pom.xml" />
+        <option value="$PROJECT_DIR$/02-MyBatis-12-Multi-Table/pom.xml" />
       </list>
     </option>
   </component>

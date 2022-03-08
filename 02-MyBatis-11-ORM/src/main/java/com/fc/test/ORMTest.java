@@ -3,7 +3,7 @@ package com.fc.test;
 
 import com.fc.dao.AccountDao;
 import com.fc.entity.Account;
-import com.fc.entity.TAcount;
+import com.fc.entity.TAccount;
 import com.fc.util.MyBatisUtil;
 import org.junit.Test;
 
@@ -14,7 +14,7 @@ public class ORMTest {
     public void testUnderscore() {
         AccountDao accountDao = MyBatisUtil.getMapper(AccountDao.class);
 
-        List<TAcount> acounts = accountDao.findById(1);
+        List<TAccount> acounts = accountDao.findById(1);
 
         System.out.println(acounts);
 
